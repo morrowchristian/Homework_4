@@ -1,56 +1,30 @@
-# Assignment: Populating Database with Mock Data
+# Database Population Assignment
 
-## Introduction
-This assignment involves populating the database created in HW3 with mock data. It requires using PHP to generate the data and a data.sql file to update the tables. This README provides an overview of the assignment requirements, instructions, and deliverables.
+In this assignment, you will populate your database from **Homework 3** with data. Let's break down the steps:
 
-## Assignment Overview
-- **Part 1: Create Data for Tables**
-  - Generate mock data for the following tables:
-    - customer
-    - order
-    - product
-    - order_item
-    - address
-    - warehouse
-    - product_warehouse
-  - Follow the specified order of insertion for data integrity.
-- **Part 2: Create a PDF Report**
-  - Briefly describe the process of generating data.
-  - Highlight any innovative approaches or solutions used.
-  - Discuss any challenges faced and how they were overcome.
-  - Reflect on whether any aspects would be done differently.
-- **Part 3: Deliverables**
-  - schema.sql
-  - data.sql
-  - PHP files for data generation
-  - Input files used (if any)
-  - 1-page PDF report
-  - Short YouTube video demonstrating completeness and correctness.
+1. **Table Verification**: First, ensure that your tables are correctly structured. If there are any issues with the table structure, correct them before proceeding.
 
-## Steps to Run
-1. Execute schema.sql to create the database structure.
-2. Run data.sql to populate the tables with generated data.
-3. Test the populated database for completeness and correctness.
+2. **Generating Mock Data**: You'll create mock data for your tables. Remember that in **HW3**, you created the schema (a set of tables) for the database, but they were empty. Now it's time to fill them with meaningful data.
 
-## Folder Structure
-- **/data_generation**: Contains PHP scripts for generating mock data.
-- **/input_files**: Holds any input files used for data generation.
-- **/reports**: Stores the PDF report.
-- **/videos**: Contains the YouTube presentation video.
+3. **Using Techniques from HW3**: Utilize the techniques you learned in **HW3** to complete this assignment. Specifically, you'll use **PHP** to generate your data and create a `data.sql` file.
 
-## Usage
-- Modify PHP scripts for customization or additional features.
-- Ensure all dependencies are installed before executing PHP scripts.
-- Review the PDF report for insights into the data generation process.
+4. **Data Generation Approach**: Think of this data generation process as a **Mad Libs** exercise. You'll follow a template similar to the one below for product descriptions:
 
-## Additional Notes
-- Verify the correctness of the populated database before submission.
-- Seek assistance if facing difficulties in running or understanding the code.
+    ```
+    A [adjective] [noun] in an [adjective] [color] made of [noun (material)] useful for [verb].
+    ```
 
-## Contributors
-- [Your Name]
-- [Your Email]
-- [Your GitHub]
+    For example:
+    ```
+    A wonderful hammer in an illustrious blue made of plastic useful for digging.
+    ```
 
-For any queries or support, contact [Your Contact Information].
+    Feel free to adapt this template for other aspects of your data.
 
+5. **Random Full Names and Addresses**: Apply the same concept to generate random full names (combining random first names and last names) and addresses. Randomly assign street numbers, street names, types, cities, and states to create diverse addresses.
+
+6. **Submission Requirements**:
+    - Include any source code you used to generate your data.
+    - Submit your `schema.sql` file along with your `data.sql` file.
+    - Ensure that I can run your `schema.sql` file followed by your `data.sql` file to have a complete database populated with data. Test this before submitting!
+    - Remember to rename your original database so you can preserve it.
